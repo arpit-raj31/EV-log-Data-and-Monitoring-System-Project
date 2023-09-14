@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_Cyan"
+    tools:context=".Internet_mode">
+
+    <TextView
+        android:id="@+id/scanqrorevTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCAN QR OR ENTER EV CODE"
+        android:textColor="@color/Maastricht_Blue"
+        android:textSize="20sp"
+        app:fontFamily="@font/mukta_medium"
+        app:layout_constraintBottom_toTopOf="@+id/qrBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/qrBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@mipmap/qr_i" />
+
+    <EditText
+        android:id="@+id/etEV_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/blue_border_crectangular"
+        android:padding="15sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter EV Code"
+        app:fontFamily="@font/montserrat_alternates_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qrBtn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/code_sub_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="SHOW"
+        android:textSize="20sp"
+        app:fontFamily="@font/montserrat_alternates_semibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etEV_code"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/etEV_code"
+        app:layout_constraintTop_toBottomOf="@+id/etEV_code"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

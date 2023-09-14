@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/bungee_inline</item>
+        <item>@font/goldman_bold</item>
+        <item>@font/montserrat_alternates_semibold</item>
+        <item>@font/mukta_medium</item>
+    </array>
+</resources>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/Light_Cyan"
+    tools:context=".Result_data">
+
+
+    <ProgressBar
+        android:id="@+id/SOCpb"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="@+id/tvC"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/tvC"
+        app:layout_constraintTop_toBottomOf="@+id/tvC"
+        tools:progress="60" />
+
+    <TextView
+        android:id="@+id/tvC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="\t\tEV BATTERY SOC"
+        android:textColor="@color/Bright_Navy_Blue"
+        android:textSize="20sp"
+        app:fontFamily="@font/roboto_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvC2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/blue_border_crectangular"
+        android:padding="15sp"
+        android:text="\t\tSPEED"
+        android:textColor="@color/Bright_Navy_Blue"
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/speed_i"
+        app:fontFamily="@font/roboto_black"
+        app:layout_constraintEnd_toEndOf="@+id/tvC"
+        app:layout_constraintStart_toStartOf="@+id/tvC"
+        app:layout_constraintTop_toBottomOf="@+id/SOCpb"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvC3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp
+"
+        android:background="@drawable/blue_border_crectangular"
+        android:padding="15sp"
+        android:text="\t\tMOTOR \n\t\tTEMPERATURE"
+        android:textColor="@color/Bright_Navy_Blue"
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_temp_i"
+        app:fontFamily="@font/roboto_black"
+        app:layout_constraintEnd_toEndOf="@+id/tvC"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvC"
+        app:layout_constraintTop_toBottomOf="@+id/tvC2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvC4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/blue_border_crectangular"
+        android:padding="15sp"
+        android:text="\t\tBATTERY \n\t\tTEMPERATURE"
+        android:textColor="@color/Bright_Navy_Blue"
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_temp_i"
+        app:fontFamily="@font/roboto_black"
+        app:layout_constraintEnd_toEndOf="@+id/tvC"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="@+id/tvC"
+        app:layout_constraintTop_toBottomOf="@+id/tvC3"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvC5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/blue_border_crectangular"
+        android:padding="15dp"
+        android:text="\t\tIs Tempered ?"
+        android:textColor="@color/Bright_Navy_Blue"
+        android:textSize="20sp"
+        app:drawableStartCompat="@drawable/ic_warn"
+        app:fontFamily="@font/roboto_black"
+        app:layout_constraintEnd_toEndOf="@+id/tvC"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="@+id/tvC"
+        app:layout_constraintTop_toBottomOf="@+id/tvC4"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvC7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/blue_border_crectangular"
+        android:padding="15dp"
+        android:text="\t\tCURRENT"
+        android:textColor="@color/Bright_Navy_Blue"
+        android:textSize="20sp"
+        app:drawableStartCompat="@drawable/ic_a_solid"
+        app:fontFamily="@font/roboto_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvC"
+        app:layout_constraintStart_toStartOf="@+id/tvC"
+        app:layout_constraintTop_toBottomOf="@+id/tvC8"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvC8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/blue_border_crectangular"
+        android:padding="15dp"
+        android:text="\t\tVOLTAGE"
+        android:textColor="@color/Bright_Navy_Blue"
+        android:textSize="20sp"
+        app:drawableStartCompat="@drawable/ic_v_solid"
+        app:fontFamily="@font/roboto_black"
+        app:layout_constraintEnd_toEndOf="@+id/tvC"
+        app:layout_constraintStart_toStartOf="@+id/tvC"
+        app:layout_constraintTop_toBottomOf="@+id/tvC5"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvCharge"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="100%"
+        android:textColor="@color/Bright_Navy_Blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SOCpb"
+        app:layout_constraintEnd_toEndOf="@+id/SOCpb"
+        app:layout_constraintStart_toStartOf="@+id/SOCpb"
+        app:layout_constraintTop_toTopOf="@+id/SOCpb"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvSpeed"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="0Km/h"
+        android:textColor="@color/white"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvC2"
+        app:layout_constraintEnd_toEndOf="@+id/tvC2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvC2"
+        app:layout_constraintTop_toTopOf="@+id/tvC2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvMTemp"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_color"
+        android:gravity="center"
+        android:padding="24sp"
+        android:text="27.14°C"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvC3"
+        app:layout_constraintEnd_toEndOf="@+id/tvC3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvC3"
+        app:layout_constraintTop_toTopOf="@+id/tvC3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvBTemp"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_color"
+        android:gravity="center"
+        android:padding="24sp"
+        android:text="27.14°C"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvC4"
+        app:layout_constraintEnd_toEndOf="@+id/tvC4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvC4"
+        app:layout_constraintTop_toTopOf="@+id/tvC4"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvTempered"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="NO"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/tvC5"
+        app:layout_constraintEnd_toEndOf="@+id/tvC5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvC5"
+        app:layout_constraintTop_toTopOf="@+id/tvC5"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_graph"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/graph_i"
+        app:backgroundTint="@color/Bright_Navy_Blue"
+        app:layout_constraintBottom_toBottomOf="@+id/SOCpb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SOCpb"
+        app:layout_constraintTop_toTopOf="@+id/SOCpb" />
+
+    <Button
+        android:id="@+id/btn_loc"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:background="@drawable/ic_loc"
+        app:backgroundTint="@color/Bright_Navy_Blue"
+        app:layout_constraintBottom_toBottomOf="@+id/SOCpb"
+        app:layout_constraintEnd_toStartOf="@+id/SOCpb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SOCpb" />
+
+    <TextView
+        android:id="@+id/tvCurrent"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="2.2A"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvC7"
+        app:layout_constraintEnd_toEndOf="@+id/tvC7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvC7"
+        app:layout_constraintTop_toTopOf="@+id/tvC7"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvVolt"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="48V"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvC8"
+        app:layout_constraintEnd_toEndOf="@+id/tvC8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvC8"
+        app:layout_constraintTop_toTopOf="@+id/tvC8"
+        tools:ignore="HardcodedText" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/warnWarn"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/SOCpb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvC"
+        app:layout_constraintTop_toTopOf="@+id/tvC"
+        app:srcCompat="@drawable/ic_warn"
+        app:tint="@color/Bright_Navy_Blue"
+        />
+
+    <ImageView
+        android:id="@+id/fireWarn"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:alpha='0.0'
+
+        app:layout_constraintBottom_toBottomOf="@+id/warnWarn"
+        app:layout_constraintEnd_toEndOf="@+id/warnWarn"
+        app:layout_constraintStart_toStartOf="@+id/tvC"
+        app:layout_constraintTop_toTopOf="@+id/warnWarn"
+        app:srcCompat="@drawable/ic_fire" />
+
+    <ImageView
+        android:id="@+id/ovSpeed"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        app:backgroundTint="@color/Bright_Navy_Blue"
+        app:layout_constraintBottom_toBottomOf="@+id/warnWarn"
+        app:layout_constraintEnd_toEndOf="@+id/tvC"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/warnWarn"
+        app:layout_constraintTop_toTopOf="@+id/warnWarn"
+        app:srcCompat="@drawable/ic_baseline_speed_24" />
+
+    <ImageView
+        android:id="@+id/agbrake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/Bright_Navy_Blue"
+        app:layout_constraintBottom_toBottomOf="@+id/ovSpeed"
+        app:layout_constraintEnd_toStartOf="@+id/theftAl"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvC"
+        app:layout_constraintTop_toTopOf="@+id/ovSpeed"
+        app:srcCompat="@drawable/ic_brake" />
+
+    <ImageView
+        android:id="@+id/theftAl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ovSpeed"
+        app:layout_constraintEnd_toEndOf="@+id/tvC"
+        app:layout_constraintTop_toTopOf="@+id/ovSpeed"
+        app:srcCompat="@drawable/ic_theft" />
+
+    <ImageView
+        android:id="@+id/replNeed"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SOCpb"
+        app:layout_constraintEnd_toEndOf="@+id/SOCpb"
+        app:layout_constraintStart_toStartOf="@+id/SOCpb"
+        app:layout_constraintTop_toTopOf="@+id/SOCpb"
+        app:srcCompat="@drawable/ic_danger"
+        android:alpha='0.0'/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

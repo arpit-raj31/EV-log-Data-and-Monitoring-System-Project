@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:padding="10dp"
+    tools:context=".Web_Graph"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/blue_border_crectangular"
+            android:gravity="center"
+            android:padding="5sp"
+            android:textSize="20sp"
+            app:fontFamily="@font/roboto_black"
+            android:text="CURRENT"
+            android:textColor="@color/Maastricht_Blue"
+            tools:ignore="HardcodedText" />
+
+        <WebView
+            android:id="@+id/webCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="300sp" />
+
+        <TextView
+            android:id="@+id/textViewVoltage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/blue_border_crectangular"
+            android:gravity="center"
+            android:padding="5sp"
+            android:text="VOLTAGE"
+            android:textColor="@color/Maastricht_Blue"
+            android:textSize="20sp"
+            app:fontFamily="@font/roboto_black"
+            tools:ignore="HardcodedText" />
+        <WebView
+            android:id="@+id/webVoltage"
+            android:layout_width="match_parent"
+            android:layout_height="300sp" />
+
+        <TextView
+            android:id="@+id/textViewSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/blue_border_crectangular"
+            android:gravity="center"
+            android:text="SPEED"
+            android:padding="5sp"
+            android:textSize="20sp"
+            app:fontFamily="@font/roboto_black"
+            android:textColor="@color/Maastricht_Blue"/>
+        <WebView
+            android:id="@+id/webSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            />
+
+        <TextView
+            android:id="@+id/textViewBTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/blue_border_crectangular"
+            android:gravity="center"
+            android:padding="5sp"
+            android:textSize="20sp"
+            app:fontFamily="@font/roboto_black"
+            android:text="BATTERY TEMPERATURE"
+            android:textColor="@color/Maastricht_Blue"
+            tools:ignore="HardcodedText" />
+        <WebView
+            android:id="@+id/webBTemp"
+            android:layout_width="match_parent"
+            android:layout_height="300sp" />
+
+        <TextView
+            android:id="@+id/textViewMTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/blue_border_crectangular"
+            android:gravity="center"
+            android:padding="5sp"
+            android:textSize="20sp"
+            app:fontFamily="@font/roboto_black"
+            android:text="MOTOR TEMPERATURE"
+            android:textColor="@color/Maastricht_Blue"
+            tools:ignore="HardcodedText" />
+        <WebView
+            android:id="@+id/webMTemp"
+            android:layout_width="match_parent"
+            android:layout_height="300sp" />
+
+        <TextView
+            android:id="@+id/textViewCharging"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/blue_border_crectangular"
+            android:gravity="center"
+            android:padding="5sp"
+            android:textSize="20sp"
+            app:fontFamily="@font/roboto_black"
+            android:text="CHARGING"
+            tools:ignore="HardcodedText"
+            android:textColor="@color/Maastricht_Blue"/>
+        <WebView
+            android:id="@+id/webCharging"
+            android:layout_width="match_parent"
+            android:layout_height="300sp" />
+
+    </LinearLayout>
+</ScrollView>
